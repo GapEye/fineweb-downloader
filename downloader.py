@@ -72,9 +72,7 @@ for file_url in parquet_urls:
     else:
         # Download the file
         download_file(file_url, save_path)
-    
-    # Update progress bar
-    progress_bar.update(1)
+        progress_bar.update(1)
 
 progress_bar.close()
 print(f"Dataset saved to {save_dir}")
